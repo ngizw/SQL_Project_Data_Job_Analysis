@@ -106,7 +106,7 @@ ORDER BY
   demand_count DESC
 LIMIT 5;
 ```
-![demanded skills for top paying](\assets\demanded_skills_top_paying_data_analyst.png)
+![demanded skills for top paying](https://github.com/ngizw/SQL_Project_Data_Job_Analysis/blob/main/demanded_skill_top_paying_data_analyst.pgn.png)
 *Pie chart graph visualizing the skills for the top 10 skills paying for data analyst; chatGPT generated this graph from my sql queries results*
 ### 4. Skills Based on Salary
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
