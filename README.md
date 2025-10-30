@@ -1,5 +1,5 @@
 # Introduction
-Dive into the data job market! Focusing on the data analysis roles, this project explores top_paying_jobs, in_demand_skills and where high demand meet high salary in data analyitics.
+Dive into the data job market! Focusing on the data analysis roles, this project explores top_paying_jobs, in_demand_skills, and where high demand meet high salary in data analyitics.
 
 SQL queries? check them out here:[Project_sql folder](/Project_sql/)
 # Background
@@ -20,11 +20,11 @@ In this project, I utilized a variety of tools to conduct my analysis:
 - **SQL** (Structured Query Language): Enabled me to interact with the database, extract insights, and answer my key questions through queries.
 - **PostgreSQL**: As the database management system, PostgreSQL allowed me to store, query, and manipulate the job posting data.
 - **Visual Studio Code:** This open-source administration and development platform helped me manage the database and execute SQL queries.
-- **Git & GitHub**: Essential for version control and sharing my sql scripts and analysis, ensuring collaboration and project tracking.
+- **Git & GitHub**: Essential for version control and sharing MySQL scripts and analysis, ensuring collaboration and project tracking.
 # The Analysis
 Each query for this project aimed at investigating specific aspects of the data analyst job market. Here’s how I approached each question:
 ### 1. Top Paying Data Analyst Jobs
-To identify the highest-paying roles, I filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the high paying opportunities in the field.
+To identify the highest-paying roles, I filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the high-paying opportunities in the field.
 ```SQL
 SELECT
     job_id,
@@ -44,12 +44,12 @@ ORDER BY
 LIMIT 10;
 ```
 ! [top paying roles](https://github.com/ngizw/SQL_Project_Data_Job_Analysis/blob/main/top_paying_roles_data_analyst.pgn.png)
-* Bar graph visualizing the salary for the top 10 salaries for data analyst; chatGPT generated this graph from my sql queries results*
+* Bar graph visualizing the salary for the top 10 salaries for data analysts; ChatGPT generated this graph from my SQL query results*
 
 Here's the breakdown of the data analyst jobs 2023:
 ** Wide Salary Range**: Top paying data analyst roles span from $184,000 to $650,000, indicating significant salary potential in the field.
-** Duverse Employers**: Companies like SmartAsset,Meta and AT&T are among those offering high salaries, showing a broad interest across different industries.
-** Job Title Variety:** There's a high diversity in a job titles ,from data analyst to Director of analytics, reflecting varied roles and specializations within data analystics.
+** Duverse Employers**: Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
+** Job Title Variety:** There's a high diversity in job titles, from data analyst to Director of analytics, reflecting varied roles and specializations within data analytics.
 ### 2. Skills for Top Paying Jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
 
@@ -85,7 +85,7 @@ ORDER BY
     top_paying_jobs.salary_year_avg DESC;
 ```
 ! [top paying skills](https://github.com/ngizw/SQL_Project_Data_Job_Analysis/blob/main/top_paying_skills_data_analyst.pgn.png) 
-*Bar graph visualizing the skills for the top 10 skills paying for data analyst; chatGPT generated this graph from my sql queries results*
+*Bar graph visualizing the skills for the top 10 skills paying for data analysts; ChatGPT generated this graph from MySQL query results*
 ### 3. In-Demand Skills for Data Analysts
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 ```SQL
@@ -107,7 +107,8 @@ ORDER BY
 LIMIT 5;
 ```
 ![demanded skills for top paying](https://github.com/ngizw/SQL_Project_Data_Job_Analysis/blob/main/demanded_skill_top_paying_data_analyst.pgn.png)
-*Pie chart graph visualizing the skills for the top 10 skills paying for data analyst; chatGPT generated this graph from my sql queries results*
+
+*Pie chart graph visualizing the skills for the top 10 skills paying for a data analyst; ChatGPT generated this graph from my SQL queries results*
 ### 4. Skills Based on Salary
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
 ```SQL
@@ -182,12 +183,12 @@ Throughout this project, I honed several key SQL techniques and skills:
 
 - **Complex Query Construction**: Learning to build advanced SQL queries that combine multiple tables and employ functions like **`WITH`** clauses for temporary tables.
 - **Data Aggregation**: Utilizing **`GROUP BY`** and aggregate functions like **`COUNT()`** and **`AVG()`** to summarize data effectively.
-- **Analytical Thinking**: Developing the ability to translate real-world questions into actionable SQL queries that got insightful answers.
+- **Analytical Thinking**: Developing the ability to translate real-world questions into actionable SQL queries that yield insightful answers.
 ### **Insights**
 
 From the analysis, several general insights emerged:
 
-1. **Top-Paying Data Analyst Jobs**: The highest-paying jobs for data analysts that allow remote work offer a wide range of salaries, the highest at $650,000!
+1. **Top-Paying Data Analyst Jobs**: The highest-paying jobs for data analysts that allow remote work offer a wide range of salaries, with the highest at $650,000!
 2. **Skills for Top-Paying Jobs**: High-paying data analyst jobs require advanced proficiency in SQL, suggesting it’s a critical skill for earning a top salary.
 3. **Most In-Demand Skills**: SQL is also the most demanded skill in the data analyst job market, thus making it essential for job seekers.
 4. **Skills with Higher Salaries**: Specialized skills, such as SVN and Solidity, are associated with the highest average salaries, indicating a premium on niche expertise.
