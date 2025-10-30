@@ -43,7 +43,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
-! [top paying roles](\assets\top_paying_roles_data_analyst.png)
+! [top paying roles](https://github.com/ngizw/SQL_Project_Data_Job_Analysis/blob/main/top_paying_roles_data_analyst.pgn.png)
 * Bar graph visualizing the salary for the top 10 salaries for data analyst; chatGPT generated this graph from my sql queries results*
 
 Here's the breakdown of the data analyst jobs 2023:
